@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #262a2f;
+}
+h1{
+    position: relative;
+    bottom: 8rem;
+    color: #fff;
+
+}
+span{
+    text-decoration: underline;
+    color: #494eea;
+}
+span:hover{
+    color: #ff9800;
+    cursor: pointer;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.box{
+    width: 400px;
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+
+}
+.box p{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.box input{
+    height: 50px;
+    width: 100%;
+    border: 1px solid #494eea;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 15px;
+    outline: 0;
+}
+.box button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: #494eea;
+    color: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-weight: 500;
+    margin: 20px 0;
+
+
+}
+
+#imgbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+  
+}
+.showqr{
+    width: 200px;
+    padding: 10px;
+     border: 1px solid #d1d1d1;
+     transition: all ;
+}
+.shake-animation{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: shake 0.1s linear 10  ;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+        border: 1px solid red;
+
+    }
+    25%{
+        transform: translateX(-2px);
+        border: 1px solid red;
+
+    }
+    50%{
+        transform: translateX(0);
+        border: 1px solid red;
+
+    }
+    75%{
+        transform: translateX(2px);
+        border: 1px solid red;
+
+    }
+    100%{
+        transform: translateX(0);
+        border: 1px solid red;
+
+    }
+}
+
+.footer{
+    width: 100vw;
+    position: relative;
+    top: 11rem;
+}
+
+
+
+.last{                /*last part*/
+    width: 100%;
+    height: 60Px;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.last-part{
+    color: #ff9800;
+    font-weight: 700;
+    font-size: 18px;                         /* end copyright @uday pratap part*/
+    margin-bottom: 25px;
+}
+.last-part:hover, .copy:hover{
+    color: white;
+}
+@media (max-width:375px) {
+    body{
+        overflow: hidden;
+    }
+.box{
+    width: 300px;
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+
+}
+h1{
+    position: relative;
+    bottom: 6rem;
+    color: #fff;
+    font-size: 1rem;
+
+}
+h1 span{
+        font-size: 1rem;
+
+}
+.footer{
+    width: 100vw;
+    position: relative;
+    top: 9rem;
+}
+.last{
+    height: 50px;
+}
+    
+}
