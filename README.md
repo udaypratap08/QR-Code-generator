@@ -1,5 +1,5 @@
 # QR-Code-generator
-
+ author- uday pratap
 A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. This application allows users to generate QR codes instantly for any text or URL.
 
  🚀 Features
